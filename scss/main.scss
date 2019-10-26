@@ -1,0 +1,112 @@
+/*-----imports----*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+
+/*-----global-----*/
+$offWhite: #f6f6f6;
+$blueGray: #656e79;
+$warmOrange: #ff9900;
+$turquoiseBlue: #19aadd;
+
+//browser reset
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: middle;
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+body {
+  width: 100%;
+}
+h1 {
+  font-size: 72pt;
+  font-weight: 700;
+  color: $offWhite;
+}
+h2 {
+  font-size: 48pt;
+  font-weight: 500;
+  color: $blueGray;
+}
+h3 {
+  font-size: 36pt;
+  font-weight: 700;
+  color: $offWhite;
+}
+p {
+  font-size: 16pt;
+  font-weight: 400;
+  color: $blueGray;
+}
+.btnOutline {
+  display: block;
+  text-decoration: none;
+  color: $warmOrange;
+  background-color: #fff;
+  border-radius: 26px;
+  width: 320px;
+  height: 70px;
+  line-height: 70px; //when height and lin-height are equal, the text gets centered vertically
+  text-align: center;
+  font-size: 16pt;
+  font-weight: 600;
+}
+.btnFilled {
+  display: block;
+  text-decoration: none;
+  color: $offWhite;
+  background-color: $warmOrange;
+  border-radius: 50px;
+  width: 590px;
+  height: 100px;
+  line-height: 100px; //when height and lin-height are equal, the text gets centered vertically
+  text-align: center;
+  font-size: 32pt;
+  font-weight: 700;
+}
+
+/*-----nav-----*/
+nav {
+  line-height: 150px;
+  text-align: left;
+}
+
+nav a {
+  text-decoration: none;
+  color: $offWhite;
+  font-size: 16pt;
+  font-weight: 700;
+}
+
+//logo
+nav a img {
+  vertical-align: center;
+}
+
+//logo
+nav a:first-child {
+  margin-left: 4vw;
+}
+
+//get Involved
+nav a:last-child {
+  float: right;
+  font-size: 32pt;
+  color: $turquoiseBlue;
+  margin-right: 11vw;
+}
+
+/*-----header-----*/
+header {
+  height: 100vh;
+  min-height: 100vh;
+  background-image: url('../image/background_header.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+}
