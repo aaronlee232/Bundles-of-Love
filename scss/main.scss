@@ -24,27 +24,27 @@ body {
   width: 100%;
 }
 h1 {
-  font-size: 72px;
+  font-size: 3.8vw; //72px
   font-weight: 700;
   color: $offWhite;
 }
 h2 {
-  font-size: 52px;
+  font-size: 2.7vw; //52px
   font-weight: 500;
   color: $blueGray;
 }
 h3 {
-  font-size: 36px;
+  font-size: 1.9vw; //36px
   font-weight: 700;
   color: $offWhite;
 }
 h4 {
-  font-size: 28px;
+  font-size: 1.5vw; //28px
   font-weight: 600;
   color: $offWhite;
 }
 p {
-  font-size: 22px;
+  font-size: 1.15vw; //22px
   font-weight: 400;
   color: $blueGray;
 }
@@ -53,12 +53,12 @@ p {
   text-decoration: none;
   color: $warmOrange;
   background-color: #fff;
-  border-radius: 26px;
-  width: 320px;
-  height: 70px;
-  line-height: 70px; //when height and lin-height are equal, the text gets centered vertically
+  border-radius: 26.9px;
+  width: 16.7vw;
+  height: 6.5vh;
+  line-height: 6.5vh; //when height and lin-height are equal, the text gets centered vertically
   text-align: center;
-  font-size: 20px;
+  font-size: 1.1vw;
   font-weight: 600;
 }
 .btnFilled {
@@ -67,11 +67,11 @@ p {
   color: $offWhite;
   background: url('../image/background_filledButton.svg') no-repeat;
   border-radius: 50px;
-  width: 590px;
-  height: 100px;
-  line-height: 100px; //when height and lin-height are equal, the text gets centered vertically
+  width: 30.7vw;
+  height: 9.3vh;
+  line-height: 9.3vh; //when height and lin-height are equal, the text gets centered vertically
   text-align: center;
-  font-size: 32px;
+  font-size: 1.7vw;
   font-weight: 700;
 }
 
@@ -82,32 +82,41 @@ p {
 
 /*-----nav-----*/
 nav {
-  line-height: 150px;
+  line-height: 14vh;
   text-align: left;
+  display: flex;
+  margin: 0 4vw;
+  justify-content: space-between;
 
-  a {
-    text-decoration: none;
-    color: $offWhite;
-    font-size: 16px;
-    font-weight: 700;
+  .logo {
+    a {
+      margin-left: 2vw;
+      text-decoration: none;
+      color: $offWhite;
+      font-size: 2.3vw;
+      font-weight: 500;
+    }
+
+    //logo
+    a img {
+      width: 4.9vw;
+      vertical-align: center;
+    }
   }
 
-  //logo
-  a img {
-    vertical-align: center;
-  }
+  //navigation links
+  menu {
+    justify-self: flex-end;
+    a {
+      box-sizing: border-box;
+      width: 29vw;
+      margin-left: 2vw;
+      text-decoration: none;
 
-  //logo
-  a:first-child {
-    margin-left: 4vw;
-  }
+      font-size: 1.7vw;
 
-  //get Involved
-  a:last-child {
-    float: right;
-    font-size: 36px;
-    color: $turquoiseBlue;
-    margin-right: 11vw;
+      color: $turquoiseBlue;
+    }
   }
 }
 
@@ -122,14 +131,14 @@ header {
 
   h1 {
     text-align: center;
-    margin: calc(35vh - 150px) auto 0 auto;
+    margin: calc(35vh - 13.9vh) auto 0 auto;
   }
 
   p {
     text-align: center;
     margin: 5vh 18.6vw 0 18.6vw;
-    line-height: 55px;
-    font-size: 33px;
+    line-height: 5.1vh;
+    font-size: 1.7vw;
   }
 }
 
@@ -226,10 +235,11 @@ header {
     display: flex;
     justify-content: space-between;
     img {
+      margin-top: 3vh;
       object-fit: cover;
       width: 29vw;
       height: 40.5vh;
-      border-radius: 30px;
+      border-radius: 30.7px;
     }
 
     p {
@@ -258,7 +268,7 @@ footer {
   p {
     color: $offWhite;
     margin-top: 1vh;
-    font-size: 18px;
+    font-size: 0.94vw;
   }
 
   .home {
@@ -297,6 +307,9 @@ footer {
       }
       .sm_icon {
         margin: 0 0.9vw;
+        img {
+          width: 2.2vw;
+        }
       }
     }
     .volunteer {
@@ -311,6 +324,6 @@ footer {
     text-align: center;
     display: block;
     margin: 4vh auto 0 auto;
-    font-size: 12px;
+    font-size: 0.63vw;
   }
 }
