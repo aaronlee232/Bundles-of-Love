@@ -7,323 +7,697 @@ $blueGray: #656e79;
 $warmOrange: #ff9900;
 $turquoiseBlue: #19aadd;
 
-//browser reset
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: middle;
-}
-
-html {
-  font-family: 'Montserrat', sans-serif;
-}
-body {
-  width: 100%;
-}
-h1 {
-  font-size: 3.8vw; //72px
-  font-weight: 700;
-  color: $offWhite;
-}
-h2 {
-  font-size: 2.7vw; //52px
-  font-weight: 500;
-  color: $blueGray;
-}
-h3 {
-  font-size: 1.9vw; //36px
-  font-weight: 700;
-  color: $offWhite;
-}
-h4 {
-  font-size: 1.5vw; //28px
-  font-weight: 600;
-  color: $offWhite;
-}
-p {
-  font-size: 1.15vw; //22px
-  font-weight: 400;
-  color: $blueGray;
-}
-.btnOutline {
-  display: block;
-  text-decoration: none;
-  color: $warmOrange;
-  background-color: #fff;
-  border-radius: 26.9px;
-  width: 16.7vw;
-  height: 6.5vh;
-  line-height: 6.5vh; //when height and lin-height are equal, the text gets centered vertically
-  text-align: center;
-  font-size: 1.1vw;
-  font-weight: 600;
-}
-.btnFilled {
-  display: block;
-  text-decoration: none;
-  color: $offWhite;
-  background: url('../image/background_filledButton.svg') no-repeat;
-  border-radius: 50px;
-  width: 30.7vw;
-  height: 9.3vh;
-  line-height: 9.3vh; //when height and lin-height are equal, the text gets centered vertically
-  text-align: center;
-  font-size: 1.7vw;
-  font-weight: 700;
-}
-
-.content-p {
-  line-height: 2.5em;
-  // letter-spacing: ;
-}
-
-/*-----nav-----*/
-nav {
-  line-height: 14vh;
-  text-align: left;
-  display: flex;
-  margin: 0 4vw;
-  justify-content: space-between;
-
-  .logo {
-    a {
-      margin-left: 2vw;
-      text-decoration: none;
-      color: $offWhite;
-      font-size: 2.3vw;
-      font-weight: 500;
-    }
-
-    //logo
-    a img {
-      width: 4.9vw;
-      vertical-align: center;
-    }
+@media (min-width: 768px) {
+  //browser reset
+  * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: middle;
   }
 
-  //navigation links
-  menu {
-    justify-self: flex-end;
-    a {
-      box-sizing: border-box;
-      width: 29vw;
-      margin-left: 2vw;
-      text-decoration: none;
-
-      font-size: 1.7vw;
-
-      color: $turquoiseBlue;
-    }
+  html {
+    font-family: 'Montserrat', sans-serif;
   }
-}
-
-/*-----header-----*/
-header {
-  height: 100vh;
-  min-height: 100vh;
-  background-image: url('../image/background_header.png');
-  background-repeat: no-repeat;
-  background-size: 100vw 100vh;
-  background-position: top left;
-
+  body {
+    width: 100%;
+  }
   h1 {
-    text-align: center;
-    margin: calc(35vh - 13.9vh) auto 0 auto;
-  }
-
-  p {
-    text-align: center;
-    margin: 5vh 18.6vw 0 18.6vw;
-    line-height: 5.1vh;
-    font-size: 1.7vw;
-  }
-}
-
-/*-----mission-----*/
-.mission {
-  box-sizing: border-box;
-  height: 100vh;
-  min-height: 100vh;
-  background-image: url('../image/background_mission.png');
-  background-repeat: no-repeat;
-  background-size: 100vw 100vh;
-  background-position: top left;
-  padding-top: 23vh;
-
-  h2 {
-    text-align: center;
-  }
-
-  .content {
-    margin: 4vh 11vw 0 11vw;
-    display: flex;
-    justify-content: space-between;
-    img {
-      object-fit: cover;
-      width: 23.7vw;
-      height: 38.5vh;
-      border-radius: 30px;
-    }
-
-    p {
-      padding-top: 2vh;
-      width: 46.5vw;
-    }
-  }
-}
-
-/*-----activities-----*/
-.activities {
-  box-sizing: border-box;
-  height: 100vh;
-  min-height: 100vh;
-  background-image: url('../image/background_activities.png');
-  background-repeat: no-repeat;
-  background-size: 100vw 100vh;
-  background-position: top left;
-  padding-top: 16.7vh;
-
-  h2 {
-    text-align: left;
-    margin-left: 13.65vw;
-  }
-
-  .content {
-    margin: 3vh 4.3vw 0 13.65vw;
-    display: flex;
-    justify-content: space-between;
-    img {
-      object-fit: cover;
-      width: 29.1vw;
-      height: 47.2vh;
-      border-radius: 30px;
-    }
-
-    p {
-      padding-top: 2vh;
-      width: 46.5vw;
-    }
-  }
-
-  a {
-    margin-top: 3vh;
-    margin-left: 13.65vw;
-  }
-}
-/*-----help-----*/
-.help {
-  box-sizing: border-box;
-  height: 100vh;
-  min-height: 100vh;
-  background-image: url('../image/background_help.png');
-  background-repeat: no-repeat;
-  background-size: 100vw 100vh;
-  background-position: top left;
-  padding-top: 16.7vh;
-
-  h2 {
-    text-align: center;
-    margin-left: 8.5vw;
-    margin-bottom: 3vh;
-  }
-
-  .content {
-    margin: 0 11.5vw 0 4.3vw;
-    display: flex;
-    justify-content: space-between;
-    img {
-      margin-top: 3vh;
-      object-fit: cover;
-      width: 29vw;
-      height: 40.5vh;
-      border-radius: 30.7px;
-    }
-
-    p {
-      align-self: center;
-      width: 46vw;
-    }
-  }
-
-  a {
-    margin-top: 9.3vh;
-    margin-left: 46.9vw;
-  }
-}
-
-/*-----help-----*/
-footer {
-  box-sizing: border-box;
-  height: 79.35vh;
-  min-height: 79.35vh;
-  background-image: url('../image/background_footer.png');
-  background-repeat: no-repeat;
-  background-size: 100vw 79.35vh;
-  background-position: top left;
-  padding-top: 16.7vh;
-
-  p {
+    font-size: 3.8vw; //72px
+    font-weight: 700;
     color: $offWhite;
-    margin-top: 1vh;
-    font-size: 0.94vw;
   }
-
-  .home {
-    a.home_title {
-      display: block;
-      text-align: center;
-      margin: 30vh auto 0 auto;
-      text-decoration: none;
-      color: $offWhite;
-    }
-    a.home_icon {
-      display: block;
-      text-align: center;
-      margin: 1vh auto 0 auto;
-    }
+  h2 {
+    font-size: 2.7vw; //52px
+    font-weight: 500;
+    color: $blueGray;
   }
-  .container {
-    margin: 1.6vh 8.6vw 0 8.6vw;
-    display: flex;
-    justify-content: space-between;
+  h3 {
+    font-size: 1.9vw; //36px
+    font-weight: 700;
+    color: $offWhite;
+  }
+  h4 {
+    font-size: 1.5vw; //28px
+    font-weight: 600;
+    color: $offWhite;
+  }
+  p {
+    font-size: 1.15vw; //22px
+    font-weight: 400;
+    color: $blueGray;
+  }
+  .btnOutline {
+    display: block;
+    text-decoration: none;
+    color: $warmOrange;
+    background-color: #fff;
+    border-radius: 26.9px;
+    width: 16.7vw;
+    height: 6.5vh;
+    line-height: 6.5vh; //when height and lin-height are equal, the text gets centered vertically
     text-align: center;
+    font-size: 1.1vw;
+    font-weight: 600;
+  }
+  .btnFilled {
+    display: block;
+    text-decoration: none;
+    color: $offWhite;
+    background: url('../image/background_filledButton.svg') no-repeat;
+    border-radius: 50px;
+    width: 30.7vw;
+    height: 9.3vh;
+    line-height: 9.3vh; //when height and lin-height are equal, the text gets centered vertically
+    text-align: center;
+    font-size: 1.7vw;
+    font-weight: 700;
+  }
 
-    .location {
-      width: 17vw;
-      p {
-        word-wrap: normal;
-        text-align: center;
+  .content-p {
+    line-height: 2.5em;
+    // letter-spacing: ;
+  }
+
+  /*-----nav-----*/
+  nav {
+    line-height: 14vh;
+    text-align: left;
+    display: flex;
+    margin: 0 4vw;
+    justify-content: space-between;
+
+    .logo {
+      a {
+        margin-left: 2vw;
+        text-decoration: none;
+        color: $offWhite;
+        font-size: 2.3vw;
+        font-weight: 500;
+      }
+
+      //logo
+      a img {
+        width: 4.9vw;
+        vertical-align: center;
       }
     }
-    .contact {
-      width: 16.7vw;
-      padding-top: 4.1vh;
 
-      h3 {
-        margin-bottom: 1.5vh;
+    //navigation links
+    menu {
+      .burger {
+        display: none;
       }
-      .sm_icon {
-        margin: 0 0.9vw;
-        img {
-          width: 2.2vw;
+      justify-self: flex-end;
+      text-align: baseline;
+      a {
+        box-sizing: border-box;
+        width: 29vw;
+        margin-left: 3vw;
+        text-decoration: none;
+
+        font-size: 1.5vw;
+
+        color: $blueGray;
+      }
+      .cta {
+        font-size: 1.7vw;
+        font-weight: 800;
+        color: $turquoiseBlue;
+      }
+    }
+  }
+
+  /*-----header-----*/
+  header {
+    height: 100vh;
+    min-height: 100vh;
+    background-image: url('../image/background_header.png');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-position: top left;
+
+    h1 {
+      text-align: center;
+      margin: calc(35vh - 13.9vh) auto 0 auto;
+    }
+
+    p {
+      color: #724606;
+      text-align: center;
+      margin: 5vh 18.6vw 0 18.6vw;
+      line-height: 5.1vh;
+      font-size: 1.7vw;
+    }
+  }
+
+  /*-----mission-----*/
+  .mission {
+    box-sizing: border-box;
+    height: 100vh;
+    min-height: 100vh;
+    background-image: url('../image/background_mission.png');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-position: top left;
+    padding-top: 23vh;
+
+    h2 {
+      text-align: center;
+    }
+
+    .content {
+      margin: 4vh 11vw 0 11vw;
+      display: flex;
+      justify-content: space-between;
+      img {
+        object-fit: cover;
+        width: 23.7vw;
+        height: 38.5vh;
+        border-radius: 30px;
+      }
+
+      p {
+        padding-top: 2vh;
+        width: 46.5vw;
+      }
+    }
+  }
+
+  /*-----activities-----*/
+  .activities {
+    box-sizing: border-box;
+    height: 100vh;
+    min-height: 100vh;
+    background-image: url('../image/background_activities.png');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-position: top left;
+    padding-top: 16.7vh;
+
+    h2 {
+      text-align: left;
+      margin-left: 13.65vw;
+    }
+
+    .content {
+      margin: 3vh 4.3vw 0 13.65vw;
+      display: flex;
+      justify-content: space-between;
+      img {
+        object-fit: cover;
+        width: 29.1vw;
+        height: 47.2vh;
+        border-radius: 30px;
+      }
+
+      p {
+        padding-top: 2vh;
+        width: 46.5vw;
+      }
+    }
+
+    a {
+      margin-top: 3vh;
+      margin-left: 13.65vw;
+    }
+  }
+  /*-----help-----*/
+  .help {
+    box-sizing: border-box;
+    height: 100vh;
+    min-height: 100vh;
+    background-image: url('../image/background_help.png');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-position: top left;
+    padding-top: 16.7vh;
+
+    h2 {
+      text-align: center;
+      margin-left: 8.5vw;
+      margin-bottom: 3vh;
+    }
+
+    .content {
+      margin: 0 11.5vw 0 4.3vw;
+      display: flex;
+      justify-content: space-between;
+      img {
+        margin-top: 3vh;
+        object-fit: cover;
+        width: 29vw;
+        height: 40.5vh;
+        border-radius: 30.7px;
+      }
+
+      p {
+        align-self: center;
+        width: 46vw;
+      }
+    }
+
+    a {
+      margin-top: 9.3vh;
+      margin-left: 46.9vw;
+    }
+  }
+
+  /*-----help-----*/
+  footer {
+    box-sizing: border-box;
+    height: 79.35vh;
+    min-height: 79.35vh;
+    background-image: url('../image/background_footer.png');
+    background-repeat: no-repeat;
+    background-size: 100vw 79.35vh;
+    background-position: top left;
+    padding-top: 16.7vh;
+
+    p {
+      color: $offWhite;
+      margin-top: 1vh;
+      font-size: 0.94vw;
+    }
+
+    .home {
+      a.home_title {
+        display: block;
+        text-align: center;
+        margin: 30vh auto 0 auto;
+        text-decoration: none;
+        color: $offWhite;
+      }
+      a.home_icon {
+        display: block;
+        text-align: center;
+        margin: 1vh auto 0 auto;
+      }
+    }
+    .container {
+      margin: 1.6vh 8.6vw 0 8.6vw;
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+
+      .location {
+        width: 17vw;
+        p {
+          word-wrap: normal;
+          text-align: center;
+        }
+      }
+      .contact {
+        width: 16.7vw;
+        padding-top: 4.1vh;
+
+        h3 {
+          margin-bottom: 1.5vh;
+        }
+        .sm_icon {
+          margin: 0 0.9vw;
+          img {
+            width: 2.2vw;
+          }
+        }
+      }
+      .volunteer {
+        width: 17vw;
+        p {
+          word-wrap: normal;
+          text-align: center;
         }
       }
     }
-    .volunteer {
-      width: 17vw;
-      p {
-        word-wrap: normal;
-        text-align: center;
+    .copyright {
+      text-align: center;
+      display: block;
+      margin: 4vh auto 0 auto;
+      font-size: 0.63vw;
+    }
+  }
+}
+
+//MOBILE DISPLAY
+@media (max-width: 767px) {
+  //browser reset
+  * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: middle;
+  }
+
+  html {
+    font-family: 'Montserrat', sans-serif;
+  }
+  body {
+    width: 100%;
+  }
+  h1 {
+    font-size: 34px;
+    font-weight: 700;
+    color: $offWhite;
+  }
+  h2 {
+    font-size: 28px;
+    font-weight: 500;
+    color: $blueGray;
+  }
+  h3 {
+    font-size: 1.9vw; //36px
+    font-weight: 700;
+    color: $offWhite;
+  }
+  h4 {
+    font-size: 1.5vw; //28px
+    font-weight: 600;
+    color: $offWhite;
+  }
+  p {
+    font-size: 16px; //22px
+    font-weight: 400;
+    color: $blueGray;
+  }
+  .btnOutline {
+    display: block;
+    text-decoration: none;
+    color: $warmOrange;
+    background-color: #fff;
+    border-radius: 15px;
+    width: 78vw;
+    height: 7vh;
+    line-height: 7vh; //when height and lin-height are equal, the text gets centered vertically
+    text-align: center;
+    font-size: 2.7vw;
+    font-weight: 600;
+  }
+  .btnFilled {
+    display: block;
+    text-decoration: none;
+    color: $offWhite;
+    background: url('../image/background_filledButton.svg') no-repeat;
+    border-radius: 15px;
+    width: 78vw;
+    height: 7vh;
+    line-height: 7vh; //when height and lin-height are equal, the text gets centered vertically
+    text-align: center;
+    font-size: 2.7vw;
+    font-weight: 700;
+  }
+
+  .content-p {
+    line-height: 2.5em;
+    // letter-spacing: ;
+  }
+
+  /*-----nav-----*/
+  nav {
+    background-color: white;
+    line-height: 6vh;
+    text-align: left;
+    display: flex;
+    padding: 0 4vw;
+    justify-content: space-between;
+    align-content: center;
+
+    .logo {
+      .logo_text {
+        width: 200px;
+        position: absolute;
+        left: 50%;
+        margin-left: -80px;
+        text-decoration: none;
+        color: $turquoiseBlue;
+        font-size: 2.3vw;
+        font-weight: 500;
+        font-size: 19px;
+      }
+      //logo
+      a img {
+        width: 4.9vw;
+        vertical-align: center;
+        display: none;
+      }
+    }
+
+    //navigation links
+    menu {
+      a {
+        text-decoration: none;
+        color: $blueGray;
+      }
+      .links {
+        position: absolute;
+        width: 50%;
+        right: 0;
+        height: 94vh;
+        top: 6vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        transform-origin: 100% 50%;
+        transform: scaleX(0);
+        transition: transform 0.5s ease-in;
+        a {
+          opacity: 0;
+        }
+      }
+
+      .links-active {
+        transform: scaleX(1);
+      }
+
+      @keyframes navLinkFade {
+        from {
+          opacity: 0;
+          transform: translateX(50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0px);
+        }
+      }
+      .burger {
+        margin-top: 1.5vh;
+        cursor: pointer;
+      }
+      .burger div {
+        display: block;
+        width: 25px;
+        height: 4px;
+        background-color: $blueGray;
+        margin: 5px;
       }
     }
   }
-  .copyright {
-    text-align: center;
-    display: block;
-    margin: 4vh auto 0 auto;
-    font-size: 0.63vw;
+
+  /*-----header-----*/
+  header {
+    height: 100vh;
+    min-height: 100vh;
+    background-image: url('../image/m_background_header.png');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-position: top left;
+
+    h1 {
+      text-align: center;
+      margin: calc(35vh - 13.9vh) auto 0 auto;
+    }
+
+    p {
+      color: #724606;
+      text-align: center;
+      margin: 5vh 18.6vw 0 18.6vw;
+      line-height: 5.1vh;
+      font-size: 17px;
+    }
+  }
+
+  /*-----mission-----*/
+  .mission {
+    box-sizing: border-box;
+    min-height: 100vh;
+    margin-top: 4vh;
+    h2 {
+      text-align: center;
+    }
+
+    .content {
+      margin: 4vh 0vw 0 0vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      img {
+        object-fit: cover;
+        width: 100vw;
+        height: 60.24vw;
+        border-radius: 0px;
+      }
+
+      p {
+        margin-top: 4vh;
+        align-self: center;
+        width: 84vw;
+      }
+    }
+  }
+
+  /*-----activities-----*/
+  .activities {
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding-top: 4vh;
+    background-color: #ececec;
+    margin-top: 8vh;
+    padding-bottom: 8vh;
+
+    h2 {
+      text-align: center;
+    }
+
+    .content {
+      margin: 4vh 0vw 0 0vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      img {
+        order: -1;
+        object-fit: cover;
+        width: 100vw;
+        height: 60.24vw;
+        border-radius: 0px;
+      }
+
+      p {
+        margin-top: 4vh;
+        align-self: center;
+        width: 84vw;
+      }
+    }
+
+    a {
+      margin-top: 5vh;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  /*-----help-----*/
+  .help {
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding-top: 4vh;
+
+    h2 {
+      text-align: center;
+      margin-left: 8.5vw;
+      margin-bottom: 3vh;
+    }
+
+    .content {
+      margin: 4vh 0vw 0 0vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      img {
+        object-fit: cover;
+        width: 100vw;
+        height: 60.24vw;
+        border-radius: 0px;
+      }
+
+      p {
+        margin-top: 4vh;
+        align-self: center;
+        width: 84vw;
+      }
+    }
+
+    a {
+      margin-top: 5vh;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  /*-----help-----*/
+  footer {
+    box-sizing: border-box;
+    min-height: 20vh;
+    background-image: url('../image/m_background_footer.png');
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-position: bottom;
+    padding-top: 16.7vh;
+
+    p {
+      color: $offWhite;
+      margin-top: 1vh;
+      font-size: 0.94vw;
+    }
+
+    .home {
+      a.home_title {
+        display: block;
+        text-align: center;
+        margin: 0vh auto 0 auto;
+        text-decoration: none;
+        color: $offWhite;
+      }
+      a.home_icon {
+        display: none;
+      }
+    }
+    .container {
+      margin: 0.4vh 8.6vw 0 8.6vw;
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+
+      .location {
+        width: 17vw;
+        p {
+          font-size: 1.015vh;
+          word-wrap: normal;
+          text-align: center;
+        }
+      }
+      .contact {
+        width: 16.7vw;
+        padding-top: 2vh;
+
+        h3 {
+          display: none;
+        }
+        .sm_icon {
+          margin: 0 0.9vw;
+          img {
+            width: 3vw;
+          }
+        }
+      }
+      .volunteer {
+        width: 17vw;
+        p {
+          font-size: 1.015vh;
+          word-wrap: normal;
+          text-align: center;
+        }
+      }
+    }
+    .copyright {
+      text-align: center;
+      display: block;
+      margin: 2vh auto 0 auto;
+      padding-bottom: 1vh;
+      font-size: 1.5vw;
+    }
   }
 }
