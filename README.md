@@ -12,9 +12,11 @@ Adobe XD
 Visual Studio Code
 
 ## Languages Used
-HTML
+- HTML
 
-CSS
+- CSS
+
+- SASS
 
 ## Notes
 I learned a lot about negative space and color coordination from this project.
